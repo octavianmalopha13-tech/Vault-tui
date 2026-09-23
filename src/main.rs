@@ -1,6 +1,6 @@
 mod app;
 mod ui;
-mod vault;
+
 
 use std::io;
 use std::time::Duration;
@@ -13,10 +13,6 @@ use crossterm::{
 use ratatui::{backend::CrosstermBackend, Terminal};
 
 use app::{App, AppState};
-
-//mod app;
-//mod ui;
-//mod vault;
 
 fn main() -> io::Result<()> {
     // ---- terminal setup ----

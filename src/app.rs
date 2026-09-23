@@ -1,7 +1,8 @@
 use crossterm::event::{KeyCode, KeyEvent};
 use zeroize::Zeroizing;
 
-use crate::vault::{self, Entry, Vault};
+//use crate::vault::{self, Entry, Vault};
+use vault_core::{self as vault, Entry, Vault};
 
 #[derive(PartialEq, Eq)]
 pub enum AppState {

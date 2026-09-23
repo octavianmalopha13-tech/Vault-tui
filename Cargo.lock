@@ -807,18 +807,26 @@ dependencies = [
 ]
 
 [[package]]
-name = "vault-tui"
+name = "vault-core"
 version = "0.1.0"
 dependencies = [
  "aes-gcm",
  "argon2",
  "base64",
- "crossterm",
  "rand",
- "ratatui",
  "serde",
  "serde_json",
  "thiserror",
+ "zeroize",
+]
+
+[[package]]
+name = "vault-tui"
+version = "0.1.0"
+dependencies = [
+ "crossterm",
+ "ratatui",
+ "vault-core",
  "zeroize",
 ]
 
